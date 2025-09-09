@@ -1,15 +1,15 @@
 class Sshdex < Formula
   desc "Lightweight, terminal-based SSH host manager written in Go"
   homepage "https://github.com/sshdex/sshdex"
-  version "0.1.3"
+  version "0.1.4"
   license "Apache-2.0"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/sshdex/sshdex/releases/download/v0.1.3/sshdex_0.1.3_darwin_arm64.tar.gz"
-    sha256 "41750729727f4b0fa367244f823ec14f72a92fb8900f94a67eeffa46f1f1284e"
+    url "https://github.com/sshdex/sshdex/releases/download/v0.1.4/sshdex_0.1.4_darwin_arm64.tar.gz"
+    sha256 "fc1a95b71c03951a223f25e00c4386bc9a336db27c455296a70a13f0db86af37"
   elsif OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/sshdex/sshdex/releases/download/v0.1.3/sshdex_0.1.3_darwin_amd64.tar.gz"
-    sha256 "ff61a58dbbbe3b738ab4064991ae7215a410a03c4d46d37298ed9715e3a0166f"
+    url "https://github.com/sshdex/sshdex/releases/download/v0.1.4/sshdex_0.1.4_darwin_amd64.tar.gz"
+    sha256 "49cac16261526787af2266f131bb62a17d5f5ecd52ba4852ad022a122863c1ec"
   else
     odie "Unsupported platform for prebuilt binary"
   end
